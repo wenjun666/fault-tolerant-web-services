@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" media="all" href="/html/assets/css/cascade/production/build-full.min.css"/>
+    <link rel="stylesheet" type="text/css" media="all" href="/html/assets/css/site.css"/>
+    <link rel="stylesheet" href="/html/style.css" type="text/css"/>
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="/html/assets/css/cascade/production/icons-ie7.min.css"><![endif]-->
+    <!--[if lt IE 9]>
+    <script src="/html/assets/js/shim/iehtmlshiv.js"></script><![endif]-->
+    <title>LetitGo</title>
+    <style type="text/css">
+    </style>
+</head>
+<body>
+<div class="site-header">
+    <header>
+        <a href="/homePage"><img src="/html/LetitGo.jpg" alt="letitGO_logo" style="width:270px;height:70px;"></a>
+    </header>
+</div>
+
+<div class="col width-fit mobile-width-fit">
+</div>
+
+<div class="col width-fill mobile-width-fill">
+    <div class="cell">
+    </div>
+</div>
+</div>
+</div>
+<div class="site-body centered-content">
+    <div class="site-center">
+        <div class="cell">
+            <div class="col">
+                <div class="cell">
+                    <div class="page-header">
+                        <h1>Hot</h1>
+                    </div>
+                </div>
+            </div>
+            {{range $key, $value := .Post}}
+            <div class="col content">
+                <div class="col">
+                    <div class="cell">
+                        <h2><a href="http://{{$value.Link}}">{{$value.Title}}</a></h2> {{$value.LikeNum}} people like
+
+                        <form action="/like" method="post">
+                           <input type="hidden" name="postId" value="{{$key}}">
+                                <input type="submit" value="like">
+                        </form>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="cell">
+                        <hr/>
+                    </div>
+                </div>
+                {{end}}
+            </div>
+            <div class="col width-fill">
+                <div class="col">
+                    <div class="cell panel">
+
+                        <div class="body">
+                            <div class="cell">
+                                <div class="col">
+                                    <div class="cell">
+
+                                            <div class="col">
+                                                {{if .UserName}}
+                                                <div>username:{{.UserName}}</div>
+                                                {{end}}
+                                            </div>
+                                            <div class="col">
+                                                <div class="col width-1of2">
+                                                    {{if .UserName}}
+                                                    <div><a href="logout"><input type="submit" value="Log out"></a></div>
+                                                    <div><a href="post"><input type="submit" value="Post new Link"></a></div>
+                                                    {{else}}
+                                                    <div><a href = "login"><input type="submit" value="Log in"></a></div>
+                                                    {{end}}
+                                                </div>
+                                                <div class="col width-fill">
+
+                                                </div>
+                                            </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="site-center">
+    <div class="site-footer">
+        <div class="col width-fit">
+            <div class="cell">
+
+            </div>
+        </div>
+        <div class="col width-fill">
+            <div class="cell pipes">
+                <ul class="nav">
+                    <li><a href="#">Create by Rui Dai, Wenjun Shen</a></li>
+                    <li><a href="#">UI: Cascade FrameWork</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/html/assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+.wrapper {
+    height: 100vh;
+    display: flex;
+
+    /* Direction of the items, can be row or column */
+    flex-direction: column;
+}
+header{
+    //margin: 1em;
+    //padding: 1em;
+    //color: Black;
+    //background-color:#6eb6e6;
+    content:"";clear:both;
+    clear: left;
+    display：block;
+    //text-align: left;
+    color:#fff!important;background-color:#6eb6e6!important
+}
+//#38ACEC
+//79BAEC
+//#cee3f8 ;
+
+input[type=text], input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: #6eb6e6;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 14em;
+}
+
+textarea{
+ width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+div.login {
+
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+div {
+    border-radius: 5px;
+}
+
+a{
+    color: Black;
+    text-decoration: none;
+}
+
+nav {
+    float: right;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+main {
+    margin-top: 0;
+      padding-top: 0;
+      float: left;
+      width: 77%;
+      background:#fff;
+      margin-right: 1.67em;
+      padding-bottom: 20px;
+      border-right: 1px solid black;
+      padding-right: 1em;
+}
