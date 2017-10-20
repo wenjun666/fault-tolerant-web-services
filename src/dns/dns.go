@@ -25,9 +25,10 @@ func StartDNS() {
 
 	leaderID = 0
 	ip = make([]string, 3)
-	ip[1] = "155.41.107.179"
-	ip[0] = "168.122.9.173"
-	ip[2] = "168.122.204.53"
+	ip[1] = "xxx.xx.xxx.xxx"
+	ip[0] = "xxx.xx.xxx.xxx"
+	ip[2] = "xxx.xx.xxx.xxx"
+
 
 
 	count = 3
